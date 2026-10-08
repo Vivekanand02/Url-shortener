@@ -1,0 +1,12 @@
+
+{
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd Backend && .\\mvnw.cmd spring-boot:run",
+    "frontend": "npm --prefix Frontend run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
